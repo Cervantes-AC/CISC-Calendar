@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120463345822",
+    "project_id": "cisc-calendar-4e1a3",
+    "storage_bucket": "cisc-calendar-4e1a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120463345822:android:614fef086bd7839f03938f",
+        "android_client_info": {
+          "package_name": "com.cisccalendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9hG8HnVZ-YlFltcE_5e-X0f-AiTh5dqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

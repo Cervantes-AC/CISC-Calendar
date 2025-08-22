@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cisccalendar"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -12,17 +13,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CISCCalendar"
         tools:targetApi="31">
+
+        <!-- Launcher Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.auth.SignInActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CISCCalendar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Auth Activities -->
+        <activity android:name=".activities.auth.SignUpActivity" />
+
+        <!-- Student Activities -->
+        <activity android:name=".activities.student.StudentDashboardActivity" />
+        <activity android:name=".activities.student.StudentCalendarActivity" />
+        <activity android:name=".activities.student.StudentRemindersActivity" />
+
+        <!-- Faculty Activities -->
+        <activity android:name=".activities.faculty.FacultyDashboardActivity" />
+        <activity android:name=".activities.faculty.FacultyEventsActivity" />
+
+        <!-- Officer Activities -->
+        <activity android:name=".activities.officer.OfficerDashboardActivity" />
+
+        <!-- Admin Activities -->
+        <activity android:name=".activities.admin.AdminDashboardActivity" />
+        <activity android:name=".activities.admin.AdminManageEventsActivity" />
+
+        <!-- Shared Activities -->
+        <activity android:name=".activities.shared.ProfileActivity" />
+        <activity android:name=".activities.shared.EventDetailsActivity" />
+
     </application>
 
 </manifest>

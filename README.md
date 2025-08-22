@@ -8,27 +8,72 @@ CISC_Calendar_CMU/
 │   │   │   │   └── com/
 │   │   │   │       └── cisccalendar/
 │   │   │   │           ├── activities/
-│   │   │   │           │   ├── auth/                   # SignUp, SignIn
-│   │   │   │           │   ├── student/                # Student dashboard & calendar
-│   │   │   │           │   ├── faculty/                # Faculty dashboard & events
-│   │   │   │           │   ├── officer/                # Org officer dashboard
-│   │   │   │           │   ├── admin/                  # Admin management screens
-│   │   │   │           │   └── shared/                 # Common activities (Profile, EventDetails)
+│   │   │   │           │   ├── auth/
+│   │   │   │           │   │   ├── SignInActivity.java
+│   │   │   │           │   │   └── SignUpActivity.java
+│   │   │   │           │   │
+│   │   │   │           │   ├── student/
+│   │   │   │           │   │   ├── StudentDashboardActivity.java
+│   │   │   │           │   │   └── StudentCalendarActivity.java
+│   │   │   │           │   │
+│   │   │   │           │   ├── faculty/
+│   │   │   │           │   │   ├── FacultyDashboardActivity.java
+│   │   │   │           │   │   └── FacultyEventsActivity.java
+│   │   │   │           │   │
+│   │   │   │           │   ├── officer/
+│   │   │   │           │   │   └── OfficerDashboardActivity.java
+│   │   │   │           │   │
+│   │   │   │           │   ├── admin/
+│   │   │   │           │   │   ├── AdminDashboardActivity.java
+│   │   │   │           │   │   └── AdminManageEventsActivity.java
+│   │   │   │           │   │
+│   │   │   │           │   └── shared/
+│   │   │   │           │       ├── ProfileActivity.java
+│   │   │   │           │       └── EventDetailsActivity.java
 │   │   │   │           │
-│   │   │   │           ├── adapters/                   # RecyclerView adapters
-│   │   │   │           ├── models/                     # Data classes (User, Event, Reminder)
-│   │   │   │           ├── firebase/                   # Firebase helper classes
-│   │   │   │           └── utils/                      # Utility classes (DateHelper, Validation, Constants)
-│   │   │   │
+│   │   │   │           ├── adapters/
+│   │   │   │           │   ├── EventAdapter.java
+│   │   │   │           │   ├── ReminderAdapter.java
+│   │   │   │           │   └── UserAdapter.java
+│   │   │   │           │
+│   │   │   │           ├── models/
+│   │   │   │           │   ├── User.java
+│   │   │   │           │   ├── Event.java
+│   │   │   │           │   └── Reminder.java
+│   │   │   │           │
+│   │   │   │           ├── firebase/
+│   │   │   │               ├── AuthManager.java
+│   │   │   │               ├── FirestoreManager.java
+│   │   │   │               ├── UserApprovalManager.java
+│   │   │   │               └── FirebaseConstants.java
 │   │   │   ├── res/
-│   │   │   │   ├── layout/                             # XML layouts
-│   │   │   │   ├── drawable/                           # Images, shapes, icons
-│   │   │   │   ├── values/                             # Colors, strings, dimens, styles
-│   │   │   │   └── mipmap/                             # App icons
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_sign_in.xml
+│   │   │   │   │   ├── activity_sign_up.xml
+│   │   │   │   │   ├── activity_student_dashboard.xml
+│   │   │   │   │   ├── activity_student_calendar.xml
+│   │   │   │   │   ├── activity_faculty_dashboard.xml
+│   │   │   │   │   ├── activity_faculty_events.xml
+│   │   │   │   │   ├── activity_officer_dashboard.xml
+│   │   │   │   │   ├── activity_admin_dashboard.xml
+│   │   │   │   │   ├── activity_admin_manage_events.xml
+│   │   │   │   │   ├── activity_profile.xml
+│   │   │   │   │   └── activity_event_details.xml
+│   │   │   │   │
+│   │   │   │   ├── drawable/
+│   │   │   │   │   └── (icons, shapes, backgrounds)
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   ├── dimens.xml
+│   │   │   │   │   └── styles.xml
+│   │   │   │   └── mipmap/
+│   │   │   │       └── (app launcher icons)
 │   │   │   │
 │   │   │   └── AndroidManifest.xml
 │   │   │
-│   │   └── assets/                                     # Fonts, JSON data if needed
+│   │   └── assets/
+│   │       └── (fonts, optional JSON files)
 │   │
 │   └── build.gradle
 │
